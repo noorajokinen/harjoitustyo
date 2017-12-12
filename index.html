@@ -18,6 +18,15 @@
     
             <link rel="stylesheet" href="css/layouts/styles.css">
         <!--<![endif]-->
+    
+    <!-- Fonts -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--font-family: 'Roboto', sans-serif; -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- font-family: 'Oswald', sans-serif; -->
+    
 </head>
 <body>
 
@@ -30,18 +39,27 @@
             <img id="navbar-icon"src="images/navbar_icon.png">
         <nav>
             <h1 class="nav-h1">Menu</h1>
-            <a class="nav-link">Link 1</a>
-            <a class="nav-link">Link 2</a>
-            <a class="nav-link">Link 3</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
+                    <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>
+                </ul>
         </nav>        
     </div>
 
     <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            <!-- A wrapper for all the blog posts -->
+        
+        <!-- Search -->
+        
+        <div id="search">
+            <form class="pure-form">
+                <input type="text" class="pure-input-rounded">
+                <button type="button" class="pure-button">Search</button>
+            </form>
+        </div>
+                
 
             <div class="posts">
-                
                 <!-- Page heading-->
                 <section class="heading">
                     <header id="header">
@@ -52,22 +70,36 @@
                 
                 <!-- Latest posts -->
                 
-                <section class="post">
+                <section class="post" id="latest-posts">
                     <h2 class="post-title">Latest Posts</h2>
-                <div class="post-content">
+                <div class="pure-g">
                 
-                    <div class="blog-post">
-                    <h3 class="blog-header">When Should I Buy Flying Tickets?</h3>
-                    <p></p>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <div class="inner-box">
+                        <h3 class="blog-header">When Should I Buy Flying Tickets?</h3>
+                    <p class="blog-text">Mauris venenatis dictum porta. Quisque a nulla pulvinar, ornare nunc et, tincidunt justo. Proin nisi ante, sodales non eleifend nec, venenatis et quam. Fusce quis ligula vulputate sem aliquet porta. Curabitur maximus condimentum arcu eget elementum. Phasellus dictum tortor eu cursus volutpat.</p>
+                        </div>
                     </div>
-                    <div class="blog-post">
-                    <h3 class="blog-header">Which Season Is Best For Travelling?</h3>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <div class="inner-box">
+                        <h3 class="blog-header">Which Season Is Best For Travelling?</h3>
+                    <p class="blog-text">In hac habitasse platea dictumst. Nam ac venenatis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam at congue sem. Integer tincidunt feugiat hendrerit. Vestibulum tempor ac diam sit amet sagittis. Suspendisse potenti. Curabitur non blandit neque.</p>    
+                        </div>
                     </div>
-                    <div class="blog-post">
-                    <h3 class="blog-header">Is Cabin Baggage Enough?</h3>
+                    <div  class="pure-u-1 pure-u-md-1-2">
+                        <div class="inner-box">
+                        <h3 class="blog-header">Is Cabin Baggage Enough?</h3>
+                        <p class="blog-text">Praesent malesuada nisi quis sem blandit elementum. Integer euismod egestas mi, sit amet aliquet arcu vulputate ac. Duis interdum sagittis augue, eu aliquam arcu interdum in. Mauris et est a lectus luctus pulvinar nec sit amet nunc. Nam at eros interdum lacus accumsan congue eu eu turpis</p>
+                        </div>
+                    
                     </div>
-                    <div class="blog-post">
-                    <h3 class="blog-header">Travelling Alone</h3>
+                    <div  class="pure-u-1 pure-u-md-1-2">
+                        <div class="inner-box">
+                            <h3 class="blog-header">Travelling Alone</h3>
+                        <p class="blog-text">Etiam cursus auctor sem ut ultrices. Pellentesque laoreet, turpis et ultrices lobortis, purus est tristique nunc, non sodales metus enim sed mi. Etiam eu diam porta, ultrices neque at, ornare odio. Phasellus finibus eleifend risus. Sed vestibulum leo et risus tristique, sit amet mattis erat consequat. Sed sed accumsan lacus, vitae tristique dolor. Sed faucibus interdum ex. Sed sodales vehicula condimentum.</p>
+                        
+                        </div>
+                    
                     </div>
                     
                 </div>
@@ -76,35 +108,35 @@
                 </section>
                 
                 <!-- Photogallery -->
-                <section class="post">
+                <section class="post" id="photogallery">
                     <header class="post-header">
                  <h2 class="post-title">Photogallery</h2>
                     </header>
-                    <div class="post-content">
+                    <div class="pure-g">
                         
                         <div class="photo">
                             <img class ="img" src="images/golden-gate-bridge.jpg">
                         </div>
                         
-                        <div class="photo" id="img2">
+                        <div class="photo">
                             <img class="img" src="images/italy.jpg">
 
                         </div>
                         
-                        <div class="photo" id="img3">
+                        <div class="photo">
                             <img class="img" src="images/lapland.jpg">
                         </div>
                         
-                        <div class="photo" id="img4">
+                        <div class="photo">
                             <img class="img" src="images/sunset.jpg">
                         </div>
                         
-                        <div class="photo" id="img5">
+                        <div class="photo">
                             <img class="img" src="images/maldives.jpg">
   
                         </div>
                         
-                        <div class="photo" id="img6">
+                        <div class="photo">
                             <img class="img" src="images/new-york.jpg">
 
                         </div> 
@@ -112,16 +144,27 @@
                     </div>
                 </section>
                 
-                <!-- -->
-                
-                
+                <!-- Contact Me-->
 
-                <section class="post">
+                <section class="post" id="contact">
                     <header class="post-header">
+                        <h2 class="post-title">Contact me</h2>
                     </header>
+                    
+                    <div class="pure-g">
+                        <div class="pure-u-1 pure-u-md-1">
+                         <form class="pure-form pure-form-stacked">
+                             <fieldset>
+                                <legend>Send a message</legend>
 
-                    <div class="post-description">
-                        
+                                <label for="email">Email</label>
+                                <input class="pure-input-2-3" id="email" type="email" placeholder="Your email">
+                                <label>Your message</label>
+                                 <textarea class="pure-input-2-3" placeholder="Your message"></textarea>
+                                 <button type="button" class="pure-button">Send </button>
+                             </fieldset>
+                            </form> 
+                        </div>
                     </div>
                 </section>
             </div>
@@ -130,13 +173,12 @@
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal">
                     <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Instagram</a></li>
                         <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
+                        <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">Facebook</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 
