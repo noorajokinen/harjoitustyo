@@ -29,59 +29,6 @@ h3 {
     padding: 0;
 }
 
-/*  Navbar  */
-.sidebar {
-    background: rgb(61, 79, 93);
-    color: black;
-    width: 50px;
-    position: fixed;
-    height: 100%;
-    transition: width 1s, box-shadow 1s;
-    -webkit-transition: width 1s, box-shadow 1s;
-    -moz-transition: width 1s, box-shadow 1s;
-    -o-transition: width 1s, box-shadow 1s;
-    text-align: right;
-}
-nav {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    padding-left: 50px;
-    white-space: nowrap; /* Ei rivitä tekstiä */
-    margin-top: 50px;
-    text-transform: uppercase;
-    
-}
-.nav-link {
-    display: block;
-    color: white;
-    
-}
-
-.nav-h1 {
-    color: white;
-    padding-right: 10px;
-}
-
-.sidebar:hover {
-    width: 15%;
-    box-shadow: 2px 2px 50px #000000; 
-}
-#navbar-icon {
-    width: 50px;
-}
-
-.pure-menu-link:hover {
-    background-color: rgb(61, 79, 93);
-    text-decoration: none;
-    color: #142952;
-    
-    
-}
-.pure-menu-link {
-    color: white;
-}
-
 
 /* Search */
 
@@ -276,5 +223,116 @@ nav {
     background: none;
 }
 
-@media (min-width: 48em) {
+/* Pure links */
+.pure-menu-link:hover {
+    background-color: rgb(61, 79, 93);
+    text-decoration: none;
+    color: #142952;
+    
+    
+}
+.pure-menu-link {
+    color: white;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 479px) {
+
+    .sidebar {
+    background: rgb(61, 79, 93);
+    color: black;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    transition: height 1s, box-shadow 1s;
+    -webkit-transition: height 1s, box-shadow 1s;
+    -moz-transition: height 1s, box-shadow 1s;
+    -o-transition: height 1s, box-shadow 1s;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+    overflow: hidden
+    }
+    
+    nav {
+    height: 100%;
+    text-transform: uppercase;
+    
+    }
+    .nav-link {
+    color: white;
+    
+    }
+
+    .nav-h1 {
+    color: white;
+    padding: 0;
+    margin: 0;
+    }
+
+    #navbar-icon {
+    height: 50px;
+    }
+    
+    
+    .sidebar:hover {
+    height: 25%;
+    box-shadow: 2px 2px 50px #000000; 
+    }
+
+
+}
+
+
+
+
+/* Tablet */
+
+@media only screen and (min-width: 480px) {
+    
+    /*  Navbar  */
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: black;
+    width: 50px;
+    position: fixed;
+    height: 100%;
+    transition: width 1s, box-shadow 1s;
+    -webkit-transition: width 1s, box-shadow 1s;
+    -moz-transition: width 1s, box-shadow 1s;
+    -o-transition: width 1s, box-shadow 1s;
+    text-align: right;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-left: 50px;
+    white-space: nowrap; /* Ei rivitä tekstiä */
+    margin-top: 50px;
+    text-transform: uppercase;
+    
+}
+.nav-link {
+    display: block;
+    color: white;
+    
+}
+
+.nav-h1 {
+    color: white;
+    padding-right: 10px;
+}
+
+.sidebar:hover {
+    width: 15%;
+    box-shadow: 2px 2px 50px #000000; 
+}
+#navbar-icon {
+    width: 50px;
+}
+
+ 
+    
 }
