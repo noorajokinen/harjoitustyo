@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    
     <title>Travelling &ndash; Tips</title>
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
@@ -29,78 +29,78 @@
     
 </head>
 <body>
-
-
-<div id="layout" class="pure-g">
     
-    <!-- Sidebar and nav for desktop -->
-    <div class="pure-g" id="desktop-nav">
-        <div class="sidebar pure-u-1 pure-u-md-1-4">
-
-            <img id="navbar-icon"src="images/navbar_icon.png">
+    
+<!-- Sidebar and nav for desktop -->
+<div class="pure-g" id="desktop-nav">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <img id="navbar-icon"src="images/navbar_icon.png">
         <nav>
             <h1 class="nav-h1">Menu</h1>
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
-                    <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
-                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>
-                </ul>
+            <a href="posts.html" class="pure-menu-link" id="post-link">See posts</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
+                <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
+                <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>
+            </ul>
         </nav>        
-        </div>
-    
     </div>
+</div>
     
-    <!-- Navbar for tabled and mobile -->
-    <div class="pure-g" id="mobile-nav">
-        <div class="pure-menu pure-menu-horizontal">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
-                <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
-                <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>
+    
+<!-- Navbar for tablet -->
+<div class="pure-g" id="mobile-nav">
+    <div class="pure-menu pure-menu-horizontal">
         
-            </ul>
-        </div>
+        <ul class="pure-menu-list">
+            <a href="posts.html" class="pure-menu-link" id="post-link">See posts</a>
+            <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
+            <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
+            <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>  
+        </ul>
+    </div> 
+</div>
     
-    </div>
-    
-    <!-- Navbar for tiny mobile -->
+<!-- Navbar for mobile -->
 
-    <div class="pure-g" id="small-mobile-nav">
-        <div id="inner-div">
+<div class="pure-g" id="small-mobile-nav">
+    <div id="inner-div">
         <div class="pure-menu custom-restricted-width">
-
+            
             <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="posts.html" class="pure-menu-link" id="post-link">See posts</a>
+                </li>    
                 <li class="pure-menu-item"><a href="#latest-posts" class="pure-menu-link">Latest posts</a></li>
                 <li class="pure-menu-item"><a href="#photogallery" class="pure-menu-link">Photogallery</a></li>
                 <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact me</a></li>
             </ul>
         </div>
         
-        </div>
     </div>
+</div>
     
-                <!-- Infobar desktop -->
-                
-                <div class="pure-g" id="info">
-                    <div id="info-bar" class="pure-u-1-1">
-                        <div id="info-bar-img"></div>
-                        <p>Mauris venenatis dictum porta. Quisque a nulla pulvinar, ornare nunc et, tincidunt justo. Proin nisi ante, sodales non eleifend nec, venenatis et quam. Fusce quis ligula vulputate sem aliquet porta. Curabitur maximus condimentum arcu eget elementum. Phasellus dictum tortor eu cursus volutpat</p>
-                    </div>
-                </div>
-                    
+<!-- Page -->
+<div id="layout" class="pure-g">
+    
+   <!-- Infobar desktop -->
+    <div class="pure-g" id="info">
+        <div id="info-bar" class="pure-u-1-1">
+            <div id="info-bar-img"></div>
+            <p>Mauris venenatis dictum porta. Quisque a nulla pulvinar, ornare nunc et, tincidunt justo. Proin nisi ante, sodales non eleifend nec, venenatis et quam. Fusce quis ligula vulputate sem aliquet porta. Curabitur maximus condimentum arcu eget elementum. Phasellus dictum tortor eu cursus volutpat</p>
+        </div>
+    </div> 
+    
     <div class="content pure-u-1 pure-u-md-3-4">
         
-        <!-- Search -->
-        
+        <!-- Search --> 
         <div id="search">
             <form class="pure-form">
                 <input type="text" class="pure-input-rounded" id="search-input">
                 <button type="button" class="pure-button" id="search-button">Search</button>
             </form>
         </div>
-                
-
-            <div class="posts">
+        
+        <div class="posts">
                 <!-- Page heading-->
                 <section class="heading">
                     <header id="header">
@@ -122,53 +122,49 @@
                 
                 <section class="post" id="latest-posts">
                     <h2 class="post-title">Latest Posts</h2>
-                <div class="pure-g">
-                
-                    <div class="pure-u-1 pure-u-md-1-2">
-                        
-                        
-                        <div class="inner-box">
+                    <div class="pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <a href="post.html">
+                                <div class="inner-box">
                             
-                        <h3 class="blog-header">When Should I Buy Flying Tickets?</h3>
-                        <div class="line"></div>
-                    <p class="blog-text">Mauris venenatis dictum porta. Quisque a nulla pulvinar, ornare nunc et, tincidunt justo. Proin nisi ante, sodales non eleifend nec, venenatis et quam. Fusce quis ligula vulputate sem aliquet porta. Curabitur maximus condimentum arcu eget elementum. Phasellus dictum tortor eu cursus volutpat.</p>
-                            <img class="pure-img" src="images/airport.jpg">
-                            <span href="#" class="read-more">Read more...</span>
-                            
-
+                                    <h3 class="blog-header">When Should I Buy Flying Tickets?</h3>
+                                    <div class="line"></div>
+                                    <p class="blog-text">Mauris venenatis dictum porta. Quisque a nulla pulvinar, ornare nunc et, tincidunt justo. Proin nisi ante, sodales non eleifend nec, venenatis et quam. Fusce quis ligula vulputate sem aliquet porta. Curabitur maximus condimentum arcu eget elementum. Phasellus dictum tortor eu cursus volutpat.</p>
+                                    <img class="pure-img" src="images/airport.jpg">
+                                    <span href="#" class="read-more">Read more...</span>
+                                </div> 
+                            </a>  
                         </div>
+                        <div class="pure-u-1 pure-u-md-1-2">
                         
-                        
-                        
-                    </div>
-                    <div class="pure-u-1 pure-u-md-1-2">
-                        
-                        <div class="inner-box">
-                        <h3 class="blog-header">Which Season Is Best For Travelling?</h3>
-                            <div class="line"></div>
+                            <a href="post2.html">
+                                <div class="inner-box">
+                                    <h3 class="blog-header">Which Season Is Best    For Travelling?</h3>
+                                    <div class="line"></div>
     
-                            <p class="blog-text">In hac habitasse platea dictumst. Nam ac venenatis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam at congue sem. Integer tincidunt feugiat hendrerit. Vestibulum tempor ac diam sit amet sagittis. Suspendisse potenti. Curabitur non blandit neque.</p>
-                            <img class="pure-img" src="images/eiffel.jpeg">
-                            <span href="#" class="read-more">Read more...</span>
+                                    <p class="blog-text">In hac habitasse   platea dictumst. Nam ac venenatis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam at congue sem. Integer tincidunt feugiat hendrerit. Vestibulum tempor ac diam sit amet sagittis. Suspendisse potenti. Curabitur non blandit neque.</p>
+                                    <img class="pure-img"   src="images/eiffel.jpeg">
+                                    <span href="#" class="read-more">Read more...</span>
                     
                             
+                                </div>
+                            </a>
+                        
                         </div>
-                        
-                    </div>
-                    <div  class="pure-u-1 pure-u-md-1-2">
-                        
-                        <div class="inner-box">
-                        <h3 class="blog-header">Is Cabin Baggage Enough?</h3>
-                            <div class="line"></div>
-                        <p class="blog-text">Praesent malesuada nisi quis sem blandit elementum. Integer euismod egestas mi, sit amet aliquet arcu vulputate ac. Duis interdum sagittis augue, eu aliquam arcu interdum in. Mauris et est a lectus luctus pulvinar nec sit amet nunc. Nam at eros interdum lacus accumsan congue eu eu turpis</p>
-                            <img class="pure-img" src="images/passport.jpg">
-                            <span href="#" class="read-more">Read more...</span>
-                        </div>
-                        
-                    
+                        <div  class="pure-u-1 pure-u-md-1-2">
+                            <a href="post3.html">
+                                <div class="inner-box">
+                                    <h3 class="blog-header">Is Cabin    Baggage Enough?</h3>
+                                    <div class="line"></div>
+                                    <p class="blog-text">Praesent malesuada nisi quis sem blandit elementum. Integer euismod egestas mi, sit amet aliquet arcu vulputate ac. Duis interdum sagittis augue, eu aliquam arcu interdum in. Mauris et est a lectus luctus pulvinar nec sit amet nunc. Nam at eros interdum lacus accumsan congue eu eu turpis</p>
+                                    <img class="pure-img" src="images/passport.jpg">
+                                    <span href="#" class="read-more">Read more...</span>
+                                </div>
+                            </a>
+
                     </div>
               <div  class="pure-u-1 pure-u-md-1-2">
-                        
+                        <a href="post4.html">
                         <div class="inner-box">
                             <h3 class="blog-header">Travelling Alone</h3>
                             <div class="line"></div>
@@ -177,6 +173,7 @@
                             <img class="pure-img" src="images/plane.jpg">  
                             <span href="#" class="read-more">Read more...</span>
                         </div>
+                        </a>
                         
                     
                     </div> 
@@ -295,21 +292,26 @@
                 </section>
             </div>
             
-            <!-- Footer -->
-            <div class="footer">
-                <div class="pure-menu pure-menu-horizontal">
-                    <ul>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Instagram</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">Facebook</a></li>
-                    </ul>
-                </div>
-            </div>
+
     </div>
 </div>
 
-
-
+            <!-- Footer -->
+    <div class="footer">
+        <div class="pure-menu pure-menu-horizontal" id="footer-box">
+            <ul class="footer-ul">
+                <li class="pure-menu-item footer-link">
+                    <a href="https://www.instagram.com/" target="_blank" class="pure-menu-link" > 
+                        <img src="images/instagram.png" class="footer-img">
+                    </a>
+                </li>
+                <li class="pure-menu-item">
+                    <a href="https://github.com/" target="_blank" class="pure-menu-link"> <img src="images/github.svg" class="footer-img"></a>
+                </li>
+                <li class="pure-menu-item"><a href="https://www.facebook.com/" target="_blank" class="pure-menu-link"> <img src="images/facebook.png" class="footer-img"></a></li>
+                </ul>
+            </div>
+    </div>
 
 </body>
 </html>
