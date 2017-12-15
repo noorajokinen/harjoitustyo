@@ -55,8 +55,7 @@ h3 {
 
 .heading {
     width: 100%;
-    margin: 30px 0;
-
+    margin-top: 20px;
 
 }
 
@@ -90,6 +89,7 @@ h3 {
 } 
 
 .blog-header {
+    margin: 10px 0;
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -126,6 +126,7 @@ h3 {
     position: relative;
     image-rendering: pixelated; /* Ei pilaa laatua */
     overflow: hidden;
+    opacity: 0.9;
 }
 
 #gallery {
@@ -180,9 +181,6 @@ h3 {
 .content {
     margin: auto;
     width: 65%;
-}
-.post {
-    padding-bottom: 2em;
 }
 .post-title {
     font-size: 2em;
@@ -393,7 +391,7 @@ h3 {
         width: 100%;
     }
     .content {
-        margin: 50px auto;
+        margin: 50px auto 10px auto;
         width: 90%;
     }
     
@@ -645,31 +643,25 @@ h3 {
         transform: scale(1);  
     }
 
-        .thumbnail.img:hover {
-            opacity: 1;
-            -webkit-transition: all 300ms ease-in;
-            -webkit-transform: scale(1.1);
-            -ms-transition: all 300ms ease-in;
-            -ms-transform: scale(1.1);   
-            -moz-transition: all 300ms ease-in;
-            -moz-transform: scale(1.2);
-            transition: all 300ms ease-in;
-            transform: scale(1.1);
-        } 
-        #photo:hover {
-            box-shadow: 2px 2px 50px #000000;
-        }
-        #post-link {
+    .thumbnail.img:hover {
+        opacity: 1;
+        -webkit-transition: all 300ms ease-in;
+        -webkit-transform: scale(1.1);
+        -ms-transition: all 300ms ease-in;
+        -ms-transform: scale(1.1);   
+        -moz-transition: all 300ms ease-in;
+        -moz-transform: scale(1.2);
+        transition: all 300ms ease-in;
+        transform: scale(1.1);
+    } 
+    #photo:hover {
+        box-shadow: 2px 2px 50px #000000;
+    }
+    #post-link {
         padding-top: 10px;
         padding-bottom: 20px;
         font-size: 1.1em;
     }
 
-    
 }
 
-
-
-    
-
-   
