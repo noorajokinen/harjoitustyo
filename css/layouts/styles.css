@@ -111,58 +111,50 @@ h3 {
     height: 1px;
     background-color: black;
 }
-
-/*Photogallery*/
-#photo {
-    transition: box-shadow 300ms;
-    -webkit-transition: box-shadow 300ms ease-in;
-    -ms-transition: box-shadow 300ms ease-in;
-    -moz-transition: box-shadow 300ms ease-in;
-    text-align: center;
-    overflow: hidden;
-}
-
-.img {
+/* Photogallery */
+.thumbnail.img {
     margin: auto;
     text-align: center;
-    opacity: 0.6;
     position: relative;
-    -webkit-transition: all 300ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 300ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 300ms ease-in;
-    transform: scale(1);  
     image-rendering: pixelated; /* Ei pilaa laatua */
     overflow: hidden;
 }
 
-.img:hover {
-    opacity: 1;
-    -webkit-transition: all 300ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 300ms ease-in;
-    -ms-transform: scale(1.1);   
-    -moz-transition: all 300ms ease-in;
-    -moz-transform: scale(1.2);
-    transition: all 300ms ease-in;
-    transform: scale(1.1);
-} 
-#photo:hover {
-    box-shadow: 2px 2px 50px #000000;
-}
 #gallery {
     width: 100%;
 }
 
+/* Lightbox */
 
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+    
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 5%;
+    image-rendering: pixelated;
+}
+
+.lightbox:target {
+    
+	outline: none;
+	display: block;
+}
 
 
 /* Contact form */
-
-
 
 
 /* Other stuff */
@@ -283,6 +275,94 @@ h3 {
     color: white;
 }
 
+/** Media screens **/
+
+/* Mobile */
+@media only screen and (max-width: 395px) {
+    
+    
+    #desktop-nav {
+        display: none;
+    }
+    
+    #mobile-nav {
+        display: none;
+    }
+    
+    #small-mobile-nav {
+        background: rgb(61, 79, 93);
+        height: 120px;
+        width: 100%;
+        letter-spacing: 0.5px;
+        text-align: center;
+        vertical-align: center;
+        margin: auto;
+        position: fixed;
+        z-index: 2;
+    }
+    #inner-div {
+        margin: auto;
+    }
+    .content {
+        padding-top: 120px;
+        width: 90%;
+        margin: auto;
+    }
+    
+    #search {
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    
+    #search-input {
+        width: 50%;
+    }
+    #email {
+        width: 100%;
+    }
+    #text-area {
+        width: 100%;
+    }
+    .inner-box {
+        margin: 5px auto;
+    }
+    
+    #info {
+        display: none;
+    }
+    
+    #info-mobile {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    #info-bar-mobile {
+        display: block;
+        width: 100%;
+
+    }
+    #info-bar-img-mobile {
+        background-color: antiquewhite;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        margin: auto;
+    }
+    #info-text {
+        width: 100%;
+    }
+    
+     .lightbox img {
+        margin-top:50%;
+         margin-bottom: 50%;
+    }  
+
+
+}
+
 
 /* Tablet */
 @media only screen and (min-width: 396px) and (max-width: 1119px){
@@ -398,17 +478,21 @@ h3 {
         overflow: hidden;
         max-width: 445px;
     }
-    .img {
+    .thumbnail.img {
         height: 300px;
         width: auto;
         overflow: hidden;
         min-width: 447px;
         
     }
+    
+     .lightbox img {
+        margin-top:25%;
+    }
 
 }
 
-
+/* Photogallery extra mediascreen */
 @media only screen and (max-width: 767px) {
     
     #gallery {
@@ -421,101 +505,21 @@ h3 {
         width: 100%;
         max-width: 700px;
     }
-    .img {
+    .thumbnail.img {
         height: auto;
         width: 100%;
         overflow: hidden;
          
     }
-    #testi {
+    #box {
         margin: auto;
-    }
+    }  
         
     
 }
 
 
-/* Mobile */
-@media only screen and (max-width: 395px) {
-    
-    
-    #desktop-nav {
-        display: none;
-    }
-    
-    #mobile-nav {
-        display: none;
-    }
-    
-    #small-mobile-nav {
-        background: rgb(61, 79, 93);
-        height: 120px;
-        width: 100%;
-        letter-spacing: 0.5px;
-        text-align: center;
-        vertical-align: center;
-        margin: auto;
-        position: fixed;
-        z-index: 2;
-    }
-    #inner-div {
-        margin: auto;
-    }
-    .content {
-        padding-top: 120px;
-        width: 90%;
-        margin: auto;
-    }
-    
-    #search {
-        width: 100%;
-        display: inline;
-        text-align: center;
-    }
-    
-    #search-input {
-        width: 50%;
-    }
-    #email {
-        width: 100%;
-    }
-    #text-area {
-        width: 100%;
-    }
-    .inner-box {
-        margin: 5px auto;
-    }
-    
-    #info {
-        display: none;
-    }
-    
-    #info-mobile {
-        width: 100%;
-        margin: auto;
-        height: auto;
-        text-align: center;
-    }
-
-    #info-bar-mobile {
-        display: block;
-        width: 100%;
-
-    }
-    #info-bar-img-mobile {
-        background-color: antiquewhite;
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-        margin: auto;
-    }
-    #info-text {
-        width: 100%;
-    }
-
-}
-
-/* Tablet */
+/* Desktop */
 
 @media only screen and (min-width: 1120px) {
     
@@ -532,44 +536,44 @@ h3 {
     }
     
     .sidebar {
-    background: rgb(61, 79, 93);
-    color: black;
-    width: 50px;
-    position: fixed;
-    height: 100%;
-    transition: width 1s, box-shadow 1s;
-    -webkit-transition: width 1s, box-shadow 1s;
-    -moz-transition: width 1s, box-shadow 1s;
-    -o-transition: width 1s, box-shadow 1s;
-    text-align: right;
-    overflow: hidden;
-    }
-    nav {
-    width: 100%;
-    height: 100%;
-    padding-left: 50px;
-    white-space: nowrap; /* Ei rivitä tekstiä */
-    margin-top: 50px;
-    text-transform: uppercase;
-    
+        background: rgb(61, 79, 93);
+        color: black;
+        width: 50px;
+        position: fixed;
+        height: 100%;
+        transition: width 1s, box-shadow 1s;
+        -webkit-transition: width 1s, box-shadow 1s;
+        -moz-transition: width 1s, box-shadow 1s;
+        -o-transition: width 1s, box-shadow 1s;
+        text-align: right;
+        overflow: hidden;
+        }
+        nav {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        white-space: nowrap; /* Ei rivitä tekstiä */
+        margin-top: 50px;
+        text-transform: uppercase;
+
     }
     .nav-link {
-    display: block;
-    color: white;
-    
+        display: block;
+        color: white;
+
     }
 
     .nav-h1 {
-    color: white;
-    padding-right: 10px;
+        color: white;
+        padding-right: 10px;
     }
 
     .sidebar:hover {
-    width: 17%;
-    box-shadow: 2px 2px 50px #000000; 
+        width: 17%;
+        box-shadow: 2px 2px 50px #000000; 
     }
     #navbar-icon {
-    width: 50px;
+        width: 50px;
     }
     #mobile-nav {
         display: none;
@@ -582,82 +586,79 @@ h3 {
     /* Info */
 
     #info {
-    position: fixed;
-    top: 30%;
-    right: 0;
-    width: 20%;
-    margin: auto;
+        position: fixed;
+        top: 30%;
+        right: 0;
+        width: 20%;
+        margin: auto;
     }
 
     #info-bar {
-    width: 200px;
-    margin: auto;
-    text-align: center;
+        width: 200px;
+        margin: auto;
+        text-align: center;
 
     }
     #info-bar-img {
-    background-color: antiquewhite;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+        background-color: antiquewhite;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
     
     }
     
     /* photogallery */
+    #photo {
+        height: 250px
+    }
+
+    .img {
+        height: 100%;
+    }
+
+    #photogallery {
+        margin-right: 20px;
+    }
+    
+    /*Photogallery*/
 #photo {
-    height: 250px
-}
-
-.img {
-    height: 100%;
-}
-
-#gallery {
-    width: 100%;
-}
-/*#testi {
-    margin: auto;
+    transition: box-shadow 300ms;
+    -webkit-transition: box-shadow 300ms ease-in;
+    -ms-transition: box-shadow 300ms ease-in;
+    -moz-transition: box-shadow 300ms ease-in;
     text-align: center;
-}*/
+    overflow: hidden;
+}
+
+.thumbnail.img {
+    opacity: 0.6;
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 300ms ease-in;
+    transform: scale(1);  
+}
+
+.thumbnail.img:hover {
+    opacity: 1;
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 300ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 300ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 300ms ease-in;
+    transform: scale(1.1);
+} 
+#photo:hover {
+    box-shadow: 2px 2px 50px #000000;
+}
 
     
 }
-
-
-    /* Photogallery */
-
-/*#img1 {
-    height: 200px;
-    width: 50%;
-    margin: 2px;
-    background: url('../../images/italy.jpg') no-repeat;
-    background-size: 300px 200px;
-    overflow: hidden;
-    text-align: center;
-    margin: auto;
-}
-
-#img2 {
-    height: 200px;
-    width: 50%;
-    margin: 2px;
-    background: url('../../images/new-york.jpg') no-repeat;
-    background-size: 300px 200px;
-    overflow: hidden;
-    text-align: center;
-    margin: auto;
-}
-
-#img3 {
-    height: 200px;
-    width: 50%;
-    margin: 2px;
-    background: url('../../images/golden-gate-bridge.jpg') no-repeat;
-    background-size: 300px 200px;
-    overflow: hidden;
-    text-align: center;
-    margin: auto;
-}*/
 
 
 
