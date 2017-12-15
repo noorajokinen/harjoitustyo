@@ -24,14 +24,22 @@ h3 {
 #latest-posts {
     margin: auto;
 }
-
+.content {
+    position: relative;
+}
+/* Info img */
+#info-img {
+    height: 100%;
+    width: auto;
+}
 
 
 /* Search */
 
 #search {
-    float: right;
-    padding-top: 10px
+    right: 0;
+    padding-top: 10px;
+    position: absolute;
 }
 
 #search-input {
@@ -47,10 +55,17 @@ h3 {
 
 .heading {
     width: 100%;
+    margin: 30px 0;
+
+
 }
 
-.header-h1 {
+
+#header-h1 {
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 3em;
+    color: #65799b;
+    margin: 0;
 }
 
 
@@ -260,7 +275,7 @@ h3 {
     }
     
     #small-mobile-nav {
-        background: rgb(61, 79, 93);
+        background: #65799b;
         height: auto;
         width: 100%;
         letter-spacing: 0.5px;
@@ -330,6 +345,7 @@ h3 {
         height: 150px;
         border-radius: 100px;
         margin: auto;
+        overflow: hidden;
     }
     #info-text {
         width: 100%;
@@ -348,6 +364,9 @@ h3 {
     #layout {
         padding-top: 30px;
     }
+    #post-layout {
+        padding-top: 30px;
+    }
     
     
     #desktop-nav {
@@ -358,7 +377,7 @@ h3 {
     }
     
     #mobile-nav {
-        background: rgb(61, 79, 93);
+        background: #65799b;
         letter-spacing: 0.5px;
         width: 100%;
         text-align: center;
@@ -452,6 +471,7 @@ h3 {
         height: 150px;
         border-radius: 100px;
         margin: auto;
+        overflow: hidden;
     }
     #photo {
         height: 300px;
@@ -520,7 +540,7 @@ h3 {
     }
 
     .sidebar {
-        background: rgb(61, 79, 93);
+        background: #65799b;
         color: black;
         width: 50px;
         position: fixed;
@@ -587,6 +607,7 @@ h3 {
         width: 200px;
         height: 200px;
         border-radius: 100px;
+        overflow: hidden;
     }
 
     /* photogallery */
